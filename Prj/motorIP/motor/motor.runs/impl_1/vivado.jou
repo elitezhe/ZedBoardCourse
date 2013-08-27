@@ -1,0 +1,9 @@
+#-----------------------------------------------------------
+# Vivado v2013.2
+# Build 272601 by xbuild on Sat Jun 15 11:18:47 MDT 2013
+# Start of session at: Tue Aug 27 20:02:33 2013
+# Process ID: 5580
+# Log file: C:/Users/Administrator/Desktop/ZedBoard/Prj/motorIP/motor/motor.runs/impl_1/motor.rdi
+# Journal file: C:/Users/Administrator/Desktop/ZedBoard/Prj/motorIP/motor/motor.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source motor.tcl -notrace

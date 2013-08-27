@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:tool_version="2013.2" bd:top="ip_car" bd:version="1.00.a">
+
+  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>ip_car</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:parameters>
+      <spirit:parameter>
+        <spirit:name>isTop</spirit:name>
+        <spirit:value spirit:format="bool" spirit:resolve="immediate">true</spirit:value>
+      </spirit:parameter>
+    </spirit:parameters>
+    <spirit:model>
+      <spirit:views>
+        <spirit:view>
+          <spirit:name>BlockDiagram</spirit:name>
+          <spirit:envIdentifier>:vivado.xilinx.com:</spirit:envIdentifier>
+          <spirit:hierarchyRef spirit:library="BlockDiagram" spirit:name="ip_car_imp" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
+        </spirit:view>
+      </spirit:views>
+      <spirit:ports>
+        <spirit:port>
+          <spirit:name>clk</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>CE</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>csn_n</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>sclk</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>mosi</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>led</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>7</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>motor_out</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>7</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>txd</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>miso</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>rxd</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>sw</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>7</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>rst</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+      </spirit:ports>
+    </spirit:model>
+  </spirit:component>
+
+  <spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>ip_car_imp</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:componentInstances>
+      <spirit:componentInstance>
+        <spirit:instanceName>motor_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="motor" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">ip_car_motor_1_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>clkdiv_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="clkdiv" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">ip_car_clkdiv_1_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>RF_r_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="RF_r" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">ip_car_RF_r_1_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>uart_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="uart" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">ip_car_uart_1_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>centre_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="centre" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">ip_car_centre_1_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+    </spirit:componentInstances>
+    <spirit:adHocConnections>
+      <spirit:adHocConnection>
+        <spirit:name>rf_r_1_rxdata</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="RF_r_1" spirit:portRef="rxdata"/>
+        <spirit:internalPortReference spirit:componentRef="centre_1" spirit:portRef="data"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>clk_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="clkdiv_1" spirit:portRef="clk"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>rf_r_1_ce</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="RF_r_1" spirit:portRef="CE"/>
+        <spirit:externalPortReference spirit:portRef="CE"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>rf_r_1_csn_n</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="RF_r_1" spirit:portRef="csn_n"/>
+        <spirit:externalPortReference spirit:portRef="csn_n"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>rf_r_1_sclk</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="RF_r_1" spirit:portRef="sclk"/>
+        <spirit:externalPortReference spirit:portRef="sclk"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>rf_r_1_mosi</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="RF_r_1" spirit:portRef="mosi"/>
+        <spirit:externalPortReference spirit:portRef="mosi"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>centre_1_led</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="centre_1" spirit:portRef="led"/>
+        <spirit:externalPortReference spirit:portRef="led"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>motor_1_motor_out</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="motor_1" spirit:portRef="motor_out"/>
+        <spirit:externalPortReference spirit:portRef="motor_out"/>
+        <spirit:internalPortReference spirit:componentRef="centre_1" spirit:portRef="motor_out"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>uart_1_txd</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="uart_1" spirit:portRef="txd"/>
+        <spirit:externalPortReference spirit:portRef="txd"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>clkdiv_1_clk_50mhz</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="clkdiv_1" spirit:portRef="clk_50mhz"/>
+        <spirit:internalPortReference spirit:componentRef="RF_r_1" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="centre_1" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="motor_1" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="uart_1" spirit:portRef="clk"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>miso_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="miso"/>
+        <spirit:internalPortReference spirit:componentRef="RF_r_1" spirit:portRef="miso"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>rxd_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="rxd"/>
+        <spirit:internalPortReference spirit:componentRef="uart_1" spirit:portRef="rxd"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>sw_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="sw"/>
+        <spirit:internalPortReference spirit:componentRef="uart_1" spirit:portRef="sw"/>
+        <spirit:internalPortReference spirit:componentRef="centre_1" spirit:portRef="sw"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>uart_1_uart_data</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="uart_1" spirit:portRef="uart_data"/>
+        <spirit:internalPortReference spirit:componentRef="centre_1" spirit:portRef="uart_data"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>rst_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="rst"/>
+        <spirit:internalPortReference spirit:componentRef="motor_1" spirit:portRef="rst"/>
+        <spirit:internalPortReference spirit:componentRef="centre_1" spirit:portRef="rst"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>centre_1_key_state</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="centre_1" spirit:portRef="key_state"/>
+        <spirit:internalPortReference spirit:componentRef="motor_1" spirit:portRef="key_state"/>
+      </spirit:adHocConnection>
+    </spirit:adHocConnections>
+  </spirit:design>
+
+</bd:repository>

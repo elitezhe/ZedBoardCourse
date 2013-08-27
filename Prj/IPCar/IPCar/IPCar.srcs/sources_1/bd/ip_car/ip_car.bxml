@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root MajorVersion="0" MinorVersion="26">
+  <CompositeFile CompositeFileTopName="ip_car" CanBeSetAsTop="true" CanDisplayChildGraph="true">
+    <Description>Composite Fileset</Description>
+    <Generation Name="SYNTHESIS" State="GENERATED"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED"/>
+    <Generation Name="SIMULATION" State="STALE"/>
+    <FileCollection Name="SOURCES" Type="SOURCES">
+      <File Name="ip\ip_car_motor_1_0\ip_car_motor_1_0.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1377605660" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\ip_car_clkdiv_1_0\ip_car_clkdiv_1_0.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1377605694" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\ip_car_RF_r_1_0\ip_car_RF_r_1_0.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1377605708" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\ip_car_uart_1_0\ip_car_uart_1_0.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1377605727" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="hdl\ip_car.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\ip_car_centre_1_0\ip_car_centre_1_0.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1377605735" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+    </FileCollection>
+  </CompositeFile>
+</Root>

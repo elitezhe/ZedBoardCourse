@@ -1,0 +1,25 @@
+# ----- REMOVE LINES ABOVE HERE --------------------------
+#
+# This license is valid from Mon Jul 15 09:25:03 UTC 2013.
+#
+# This is license NODELOCKED to HOSTID=ANY;
+# there is no need to run lmgrd for this license.
+#
+#
+# This is a permanent license generated on Mon Jul 15 09:25:03 UTC 2013
+INCREMENT Vivado_WebPACK xilinxd 2014.07 permanent uncounted \
+D6B37E738669 \
+VENDOR_STRING=lezhenw@xilinx.com,Vivado_WebPACK,software,permanent,_210764880_0_0_633 \
+HOSTID=ANY ISSUER="Xilinx Inc" START=15-Jul-2013 TS_OK
+#
+#
+# ----------------------------------------------------------------------
+#  The following PACKAGE definition is a REQUIRED part of this license:
+#
+PACKAGE Vivado_WebPACK xilinxd 2014.07 2E0394E221A9 \
+COMPONENTS="xps_tdp V_WebPACK XC7Z020 XC7Z010 PlanAhead \
+XC7Z030 WebPACK" OPTIONS=SUITE
+#
+# ------------------------------------------------------------------------------
+#
+# ----- REMOVE LINES BELOW HERE --------------------------

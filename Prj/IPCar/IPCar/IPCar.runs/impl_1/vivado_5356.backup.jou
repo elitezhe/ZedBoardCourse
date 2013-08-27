@@ -1,0 +1,9 @@
+#-----------------------------------------------------------
+# Vivado v2013.2
+# Build 272601 by xbuild on Sat Jun 15 11:18:47 MDT 2013
+# Start of session at: Tue Aug 27 20:32:24 2013
+# Process ID: 6584
+# Log file: C:/Users/Administrator/Desktop/ZedBoard/Prj/IPCar/IPCar/IPCar.runs/impl_1/ip_car_wrapper.rdi
+# Journal file: C:/Users/Administrator/Desktop/ZedBoard/Prj/IPCar/IPCar/IPCar.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source ip_car_wrapper.tcl -notrace

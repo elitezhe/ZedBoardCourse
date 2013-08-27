@@ -1,0 +1,9 @@
+#-----------------------------------------------------------
+# Vivado v2013.2
+# Build 272601 by xbuild on Sat Jun 15 11:18:47 MDT 2013
+# Start of session at: Tue Aug 27 20:00:24 2013
+# Process ID: 2132
+# Log file: C:/Users/Administrator/Desktop/ZedBoard/Prj/motorIP/motor/motor.runs/synth_1/motor.rds
+# Journal file: C:/Users/Administrator/Desktop/ZedBoard/Prj/motorIP/motor/motor.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source motor.tcl

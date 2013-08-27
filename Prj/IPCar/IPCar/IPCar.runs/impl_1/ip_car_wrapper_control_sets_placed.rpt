@@ -1,0 +1,64 @@
+Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2013.2 (win32) Build 272601 Sat Jun 15 11:18:47 MDT 2013
+| Date         : Tue Aug 27 20:33:22 2013
+| Host         :  running 32-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file ip_car_wrapper_control_sets_placed.rpt
+| Design       : ip_car_wrapper
+| Device       : xc7z020
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    11 |
+| Minimum Number of register sites lost to control set restrictions |    12 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              80 |           40 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              48 |           14 |
+| Yes          | No                    | No                     |              20 |            7 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              40 |           11 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+-----------------------------------------+-------------------------------------------+------------------+----------------+
+|          Clock Signal          |              Enable Signal              |              Set/Reset Signal             | Slice Load Count | Bel Load Count |
++--------------------------------+-----------------------------------------+-------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG                 |                                         |                                           |                1 |              1 |
+|  ip_car_i/clkdiv_1/clk_50mhz   | ip_car_i/RF_r_1/n_0_rxdata_reg[7]_i_1   |                                           |                2 |              6 |
+|  ip_car_i/clkdiv_1/clk_50mhz   | ip_car_i/RF_r_1/n_0_outdata_reg[7]_i_1  |                                           |                3 |              6 |
+|  ip_car_i/RF_r_1/sclk          |                                         |                                           |                5 |              8 |
+|  ip_car_i/clkdiv_1/clk_50mhz   | ip_car_i/RF_r_1/inst/spi/busy           | ip_car_i/RF_r_1/n_0_inst/spi/b_reg[7]_i_1 |                2 |              8 |
+|  ip_car_i/clkdiv_1/clk_50mhz   | ip_car_i/RF_r_1/n_0_inbuffer_reg[7]_i_1 |                                           |                2 |              8 |
+| ~ip_car_i/uart_1/inst/rxd_busy |                                         |                                           |                6 |              8 |
+|  ip_car_i/clkdiv_1/clk_50mhz   |                                         | ip_car_i/RF_r_1/clear                     |                5 |             16 |
+|  ip_car_i/clkdiv_1/clk_50mhz   |                                         | ip_car_i/uart_1/clear                     |                9 |             32 |
+|  ip_car_i/clkdiv_1/clk_50mhz   | ip_car_i/uart_1/inst/rxd_busy           | ip_car_i/uart_1/n_0_i_reg[0]_i_1          |                9 |             32 |
+|  ip_car_i/clkdiv_1/clk_50mhz   |                                         |                                           |               28 |             63 |
++--------------------------------+-----------------------------------------+-------------------------------------------+------------------+----------------+
+
+
